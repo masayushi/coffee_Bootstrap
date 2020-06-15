@@ -1,0 +1,26 @@
+body {
+  background: #d1b391;
+}
+
+.container {
+  background: #f1f1f1;
+}
+
+.carousel-item img {
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-img {
+  height: 300px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-img {
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=style.css.map */

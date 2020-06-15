@@ -2,157 +2,194 @@
 <html lang="zh">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yusshi的咖啡</title>
-    <!-- bootstrap快捷 -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>yushi的咖啡店</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
-    <!-- 容器 -->
-    <div class="container">
-        <!-- 導覽列 -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="nav-link active" href="#">Yusshi的咖啡</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">產品介紹<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">服務</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">聯絡我們</a>
-                    </li>
-        </nav>
+  <!-- 容器 -->
+  <div class="container">
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+      <a class="navbar-brand" href="#">yushi的咖啡店</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item" active>
+            <a class="nav-link" href="#">產品介紹 <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">服務</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">聯絡我們</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-
-        <!-- 輪播 -->
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./img/4coffee.jpg" class="d-block w-100" alt="四杯咖啡">
-                </div>
-                <div class="carousel-item">
-                    <img src="./img/cup+coffee.jpg" class="d-block w-100" alt="倒咖啡的照片">
-                </div>
-                <div class="carousel-item">
-                    <img src="./img/makaron+coffee.jpg" class="d-block w-100" alt="馬卡龍+咖啡">
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+    <!-- 輪播圖 -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/4coffee.jpg" class="d-block w-100" alt="4杯咖啡">
+          <h5>專業拉花</h5>
+          <p>本店提供專業拉花，讓您獲得味覺與視覺的雙重享受！</p>
         </div>
 
+        <div class="carousel-item">
+          <img src="./img/cup+coffee.jpg" class="d-block w-100" alt="倒咖啡">
+          <h5>靜謐好所在</h5>
+          <p>在這裡，您能夠妥離繁忙的生活，獲得小憩的時光</p>
+        </div>
+
+        <div class="carousel-item">
+          <img src="./img/makaron+coffee.jpg" class="d-block w-100" alt="馬卡龍與咖啡">
+          <h5>享受下午茶</h5>
+          <p>歡迎跟朋友來到本店一同度過歡樂好食光！</p>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
+
     <!-- 產品介紹 -->
     <h1>產品介紹</h1>
     <!-- 手機：12  平板/電腦：6 -->
     <div class="row">
-        <div class="col-sm-12 col-md-6">
-            <div class="card" style="width: 18rem;">
-                <img src="./img/4coffee.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">四杯咖啡</h5>
-                    <p class="card-text">好喝的四杯咖啡，乓乓</p>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">售價$85</li>
-                </div>
-            </div>
+      <!-- 這邊要查一下 -->
+      <div class="col-sm-12 col-md-6 mb-3">
+        <div class="card bg-dark text-white">
+          <img src="./img/late.jpg" class="card-img" alt="拿鐵">
+          <div class="card-img-overlay">
+            <h5 class="card-title">拿鐵</h5>
+            <p class="card-text">給您滿滿的活力，讓您有個美好的一天</p>
+            <p class="card-text">售價 $70</p>
+          </div>
+        </div>
+
+        <div class="card bg-dark text-white">
+          <img src="./img/coffee beans.jpg" class="card-img" alt="咖啡豆">
+          <div class="card-img-overlay">
+            <h5 class="card-title">咖啡豆</h5>
+            <p class="card-text">各式咖啡豆，任君挑選</p>
+            <p class="card-text">售價 依豆種而定</p>
+          </div>
         </div>
 
 
-        <div class="row">
-            <div class="col-sm-12 col-md-6">
-                <div class="card" style="width: 18rem;">
-                    <img src="./img/cup+coffee.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">倒咖啡服務</h5>
-                        <p class="card-text">別人幫自己倒的咖啡就是比較好喝</p>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">售價：無價</li>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 col-md-6">
-                    <div class="card" style="width: 18rem;">
-                        <img src="./img/makaron+coffee.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">綠色馬卡龍</h5>
-                            <p class="card-text">好吃的綠色馬卡龍</p>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">售價：心意</li>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- 服務 -->
-
-
-            <!-- 聯絡我 -->
-            <h1>聯絡我</h1>
-
-            <form>
-                <div class="form-group row">
-                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                    <div class="col-sm-10">
-                        <input type="email" class="form-control" id="inputEmail3">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="inputPassword3" class="col-sm-2 col-form-label">姓名</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="inputPassword3">
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <div class="col-sm-2">請輸入您的疑問
-                        <div class="col-sm-10">
-                            <textarea name="" id="" cols="30" rows="5" class="form-control"></textarea>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-sm-10">
-                            <button type="submit" class="btn btn-primary">送出</button>
-                        </div>
-                    </div>
-                </div>
-            </form>
-            <!-- 地圖 -->
-            <iframe class="w-100"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.4233741001262!2d120.22303291542306!3d23.008222222636824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e766708a34951%3A0xf97362b02a86c274!2z6LKT6ZaA5ZKW5ZWhIENhZmUnIE1vbWVudA!5e0!3m2!1szh-TW!2stw!4v1592122328723!5m2!1szh-TW!2stw"
-                width="800" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                tabindex="0"></iframe>
-            <footer>
-
-            </footer>
-
+        <div class="card bg-dark text-white">
+          <img src="./img/tiramisu.jpg" class="card-img" alt="提拉米蘇">
+          <div class="card-img-overlay">
+            <h5 class="card-title">提拉米蘇</h5>
+            <p class="card-text">本店的招牌，甜而不膩，保證讓甜食愛好者為之瘋狂</p>
+            <p class="card-text">售價 $85</p>
+          </div>
         </div>
-</body>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+
+        <div class="card bg-dark text-white">
+          <img src="./img/cookies.jpg" class="card-img" alt="餅乾">
+          <div class="card-img-overlay">
+            <h5 class="card-title">手做餅乾</h5>
+            <p class="card-text">誰說餅乾是垃圾食物?讓我們顛覆這個概念吧！</p>
+            <p class="card-text">售價 $65</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 服務 -->
+    <h1 class="py-3">服務</h1>
+    <div class="card-group">
+      <div class="card">
+        <img src="./img/kaiwa.jpg" class="card-img-top" alt="討論會">
+        <div class="card-body">
+          <h5 class="card-title">討論、交流會</h5>
+          <p class="card-text">本店定期舉辦交流會，若是希望能接觸到不同領域的朋友請別錯過！</p>
+          <p class="card-text"><small class="text-muted">◎交流會為每個禮拜天的下午2點半開始，詳細請見門口海報或詢問店員</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./img/coffee lesson.jpg" class="card-img-top" alt="咖啡教學">
+        <div class="card-body">
+          <h5 class="card-title">咖啡課程</h5>
+          <p class="card-text">本店會定期舉辦咖啡課程，歡迎各位有興趣的朋友報名</p>
+          <p class="card-text"><small class="text-muted">◎本課程名額有限，人數滿15人即結束招生，詳細請洽店員。</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./img/wifi.jpg" class="card-img-top" alt="免費wifi與充電">
+        <div class="card-body">
+          <h5 class="card-title">免費wifi與充電</h5>
+          <p class="card-text">本店備有免費的無線上網與充電插座，提供各位顧客使用</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 聯絡我們 -->
+
+    <form>
+      <div class="form-group row">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">姓名</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="inputEmail3">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputPassword3" class="col-sm-2 col-form-label">信箱</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="inputPassword3">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-sm-2">您的建議</div>
+        <div class="col-sm-10">
+          <textarea name="advise" id="advise" cols="30" rows="5"></textarea>
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-12 text-center py-3">
+          <button type="submit" class="btn btn-primary">送出</button>
+        </div>
+      </div>
+    </form>
+
+    <!-- 地圖 -->
+    <iframe class="w-100"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116539.83724825091!2d120.45485671155242!3d24.106069761687063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d1438fb3d3f%3A0xb7b4ebd02f1906b6!2sTaichung%20Station!5e0!3m2!1sfr!2stw!4v1592234992787!5m2!1sfr!2stw"
+      width="600" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+      tabindex="0"></iframe>
+
+    <!-- 頁尾 -->
+    <footer class="text-center py-5 text-black-50">
+      &copy; yushi的咖啡店 2020 All Right Reserver.
+    </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
+</body>
 
 </html>
